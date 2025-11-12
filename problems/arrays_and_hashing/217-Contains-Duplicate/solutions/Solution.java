@@ -10,7 +10,7 @@ class Solution {
      * Checks whether a given integer array contains duplicates
      * 
      * @param nums array of integers
-     * @return return `true` if any value appears more than once in the array, otherwise return `false`
+     * @return `true` if any value appears more than once in the array, otherwise `false`
      */
     public boolean containsDuplicate(int[] nums) {
         return containsDuplicateStreamDistinct(nums);
