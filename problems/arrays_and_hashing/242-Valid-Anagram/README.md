@@ -18,6 +18,9 @@ Input: s = "jar", t = "jam"
 Output: false
 ```
 
+### Constraints
+`s` and `t` consist of lowercase English letters.
+
 ### Recommended Solution
 - **Approach:** 
 - **Time Complexity:** O(n + m), where n is the length of the string s and m is the length of the string t.
