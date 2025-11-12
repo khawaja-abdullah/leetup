@@ -1,4 +1,4 @@
-# 217. Contains Duplicate
+# 242. Valid Anagram
 
 ## Description
 Given two strings `s` and `t`, return `true` if the two strings are anagrams of each other, otherwise return `false`.
