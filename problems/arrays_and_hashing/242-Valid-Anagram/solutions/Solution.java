@@ -62,8 +62,14 @@ class Solution {
         Map<Character, Integer> frequencyMapS = new HashMap<>();
         Map<Character, Integer> frequencyMapT = new HashMap<>();
         for (int i = 0; i < s.length(); i++) {
-            frequencyMapS.put(s.charAt(i), frequencyMapS.getOrDefault(s.charAt(i), 0) + 1);
-            frequencyMapT.put(t.charAt(i), frequencyMapT.getOrDefault(t.charAt(i), 0) + 1);
+            frequencyMapS.put(
+                s.charAt(i), 
+                frequencyMapS.getOrDefault(s.charAt(i), 0) + 1
+            );
+            frequencyMapT.put(
+                t.charAt(i), 
+                frequencyMapT.getOrDefault(t.charAt(i), 0) + 1
+            );
         }
 
         return frequencyMapS.equals(frequencyMapT);
@@ -82,14 +88,22 @@ class Solution {
      */
     private boolean isAnagramHashMap(String s, String t) {
         if (s.length() != t.length()) return false;
+
         Map<Character, Integer> frequencyMap = new HashMap<>();
-        
         for (int i = 0; i < s.length(); i++) {
-            frequencyMap.put(s.charAt(i), frequencyMap.getOrDefault(s.charAt(i), 0) + 1);
-            frequencyMap.put(t.charAt(i), frequencyMap.getOrDefault(t.charAt(i), 0) - 1);
+            frequencyMap.put(
+                s.charAt(i), 
+                frequencyMap.getOrDefault(s.charAt(i), 0) + 1
+            );
+            frequencyMap.put(
+                t.charAt(i),
+                frequencyMap.getOrDefault(t.charAt(i), 0) - 1
+            );
         }
 
-        return frequencyMap.entrySet().stream().allMatch(entry -> entry.getValue() == 0);
+        return frequencyMap.entrySet()
+                    .stream()
+                    .allMatch(entry -> entry.getValue() == 0);
     }
 
     /*

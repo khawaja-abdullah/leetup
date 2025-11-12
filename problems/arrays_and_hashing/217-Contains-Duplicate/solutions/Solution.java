@@ -21,7 +21,9 @@ class Solution {
      * Space complexity: O(n)
      */
     private boolean containsDuplicateStreamDistinct(int[] nums) {
-        return Arrays.stream(nums).distinct().count() != nums.length;
+        return Arrays.stream(nums)
+                .distinct()
+                .count() != nums.length;
     }
 
     /*
@@ -68,10 +70,11 @@ class Solution {
         Map<Integer, Integer> frequencyMap = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {
             frequencyMap.put(nums[i], (frequencyMap.get(nums[i]) == null) ? 1 : frequencyMap.get(nums[i]) + 1);
+            // frequencyMap.put(nums[i], frequencyMap.getOrDefault(nums[i], 0) + 1);
         }
         return frequencyMap.entrySet()
-                .stream()
-                .anyMatch(entry -> entry.getValue() > 1);
+                    .stream()
+                    .anyMatch(entry -> entry.getValue() > 1);
     }
     
     /*
