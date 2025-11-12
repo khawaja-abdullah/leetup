@@ -1,7 +1,7 @@
-# 🚀 LeetUp — LeetCode Grind
+# 🚀 Leetup — LeetCode Grind
 
 Welcome to **LeetUp** — my personal playground for **DSA, algorithms, and coding patterns**!  
-Here, I solve LeetCode problems **in multiple languages** (Java, C++, Python) and track learnings for every problem.  
+Here, I solve LeetCode problems **in multiple languages** and track learnings for every problem.  
 
 Each problem folder is self-contained and includes:
 
