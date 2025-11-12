@@ -11,7 +11,7 @@ class Solution {
      * @return `true` if the two strings are anagrams of each other, otherwise `false`
      */
     public boolean isAnagram(String s, String t) {
-        return inAnagramTwoHashTable(s, t);
+        return inAnagramHashTable(s, t);
     }
 
     /*
@@ -24,17 +24,17 @@ class Solution {
      * Space complexity:
      * - One array of size 26; O(26) -> O(1)
      */
-    private boolean inAnagramTwoHashTable(String s, String t) {
+    private boolean inAnagramHashTable(String s, String t) {
         if (s.length() != t.length()) return false;
         
         int[] alphabetsHashTable = new int[26];
         for (int i = 0; i < s.length(); i++) {
-            alphabetsHashTable[s.charAt(i) % 'a'] += 1;
-            alphabetsHashTable[t.charAt(i) % 'a'] -= 1;
+            alphabetsHashTable[s.charAt(i) - 'a'] += 1;
+            alphabetsHashTable[t.charAt(i) - 'a'] -= 1;
         }
 
-        for (int i = 0; i < 26; i++) {
-            if (alphabetsHashTable[i] != 0) {
+        for (int entry : alphabetsHashTable) {
+            if (entry != 0) {
                 return false;
             }
         }
