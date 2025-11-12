@@ -1,4 +1,4 @@
-# 🚀 Leetup — LeetCode Grind
+# 🚀 LeetUp — LeetCode Grind
 
 Welcome to **LeetUp** — my personal playground for **DSA, algorithms, and coding patterns**!  
 Here, I solve LeetCode problems **in multiple languages** and track learnings for every problem.  
