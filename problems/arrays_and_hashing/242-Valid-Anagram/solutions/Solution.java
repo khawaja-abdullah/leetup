@@ -15,7 +15,7 @@ class Solution {
      * @return `true` if the two strings are anagrams of each other, otherwise `false`
      */
     public boolean isAnagram(String s, String t) {
-        return inAnagramHashTable(s, t);
+        return isAnagramHashTable(s, t);
     }
 
     /*
@@ -28,7 +28,7 @@ class Solution {
      * Space complexity:
      * - One array of size 26; O(26) -> O(1)
      */
-    private boolean inAnagramHashTable(String s, String t) {
+    private boolean isAnagramHashTable(String s, String t) {
         if (s.length() != t.length()) return false;
         
         int[] alphabetsHashTable = new int[26];
@@ -56,7 +56,7 @@ class Solution {
      * - Two HashMaps each storing up to k unique chars of s and t: O(2k) -> O(k)
      * - With fixed lowercase alphabet (<= 26 letters): O(1)
      */
-     private boolean inAnagramTwoHashMaps(String s, String t) {
+     private boolean isAnagramTwoHashMaps(String s, String t) {
         if (s.length() != t.length()) return false;
         
         Map<Character, Integer> frequencyMapS = new HashMap<>();
@@ -80,7 +80,7 @@ class Solution {
      * - Single HashMap for up to k unique chars of s and t: O(k)
      * - With fixed lowercase alphabet (<= 26 letters): O(1)
      */
-    private boolean inAnagramHashMap(String s, String t) {
+    private boolean isAnagramHashMap(String s, String t) {
         if (s.length() != t.length()) return false;
         Map<Character, Integer> frequencyMap = new HashMap<>();
         
@@ -97,7 +97,7 @@ class Solution {
      * - Time Complexity: O(n log n) average, O(n^2) worst case (rare)
      * - Space Complexity: O(log n) for recursion stack
      */
-     private boolean inAnagramSorting(String s, String t) {
+     private boolean isAnagramSorting(String s, String t) {
         if (s.length() != t.length()) return false;
         
         char[] sCharArray = s.toCharArray();
