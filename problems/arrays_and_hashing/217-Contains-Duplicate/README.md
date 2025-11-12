@@ -21,13 +21,13 @@ Explanation: All elements are distinct.
 ```
 
 ### Recommended Solution
-**Approach:** HashSet or Stream Distinct
-**Time Complexity:** O(n)
-**Space Complexity:** O(n)
+- **Approach:** HashSet or Stream Distinct
+- **Time Complexity:** O(n)
+- **Space Complexity:** O(n)
 
 ### Meta
-**Difficulty** Easy
-**Topics** Array, Hash Table, Sorting
+- **Difficulty** Easy
+- **Topics** Array, Hash Table, Sorting
 
 ### Resources
 - [Leetcode problem](https://leetcode.com/problems/contains-duplicate/description/)
