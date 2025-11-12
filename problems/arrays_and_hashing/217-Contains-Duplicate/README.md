@@ -6,13 +6,17 @@ Given an integer array `nums`, return `true` if any value appears more than once
 ### Example
 ```
 Input: nums = [1, 2, 3, 3]
+
 Output: true
+
 Explanation: The element 3 occurs at the indices 2 and 3.
 ```
 
 ```
 Input: nums = [1, 2, 3, 4]
+
 Output: false
+
 Explanation: All elements are distinct.
 ```
 
