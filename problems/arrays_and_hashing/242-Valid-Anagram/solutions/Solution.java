@@ -5,6 +5,7 @@ import java.util.Map;
 /*
  * In all cases below m = n as we return early on length mismatch
  */
+@SuppressWarnings("unused")
 class Solution {
 
     /**
