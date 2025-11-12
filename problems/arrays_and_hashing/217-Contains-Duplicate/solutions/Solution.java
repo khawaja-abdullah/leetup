@@ -40,8 +40,15 @@ class Solution {
     }
 
     /*
-     * Primitive (int[]) - Dual-Pivot QuickSort - Time complexity: O(nlog(n)) avg, O(n^2) worst; Space Complexity: O(log(n)) (stack)
-     * Object (Integer[]) - TimSort	- Time complexity: O(nlog(n)); Space Complexity: O(n) (aux array)
+     * Primitive (int[]):
+     * - Dual-Pivot QuickSort 
+     * - Time complexity: O(nlog(n)) avg, O(n^2) worst
+     * - Space Complexity: O(log(n)) (stack)
+     * 
+     * Object (Integer[]) 
+     * - TimSort
+     * - Time complexity: O(nlog(n))
+     * - Space Complexity: O(n) (aux array)
      */
     private boolean containsDuplicateSorting(int[] nums) {
         Arrays.sort(nums);
