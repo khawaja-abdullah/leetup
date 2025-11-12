@@ -20,15 +20,17 @@ Output: false
 Explanation: All elements are distinct.
 ```
 
-**Recommended Solution**
-A solution with O(n) time and O(n) space, where n is the size of the input array.
+### Recommended Solution
+**Approach:** HashSet or Stream Distinct
+**Time Complexity:** O(n)
+**Space Complexity:** O(n)
 
+### Meta
 **Difficulty** Easy
-
 **Topics** Array, Hash Table, Sorting
 
 ### Resources
-- [Link to Leetcode problem](https://leetcode.com/problems/contains-duplicate/description/)
+- [Leetcode problem](https://leetcode.com/problems/contains-duplicate/description/)
 - [Neetcode explanation](https://neetcode.io/solutions/contains-duplicate)
 
 ### Similar Questions
