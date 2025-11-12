@@ -45,7 +45,7 @@ Follow-up: Can you come up with an algorithm that is less than O(n2) time comple
 
 ### Meta
 - **Difficulty** Easy
-- **Topics** Array, Hash Table, Sorting
+- **Topics** Array, Hash Table
 
 ### Resources
 - [Leetcode problem](https://leetcode.com/problems/two-sum/description/)
