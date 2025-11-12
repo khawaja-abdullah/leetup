@@ -34,7 +34,7 @@ Explanation: All elements are distinct.
 - [Neetcode explanation](https://neetcode.io/solutions/contains-duplicate)
 
 ### Similar Questions
-- 219 Contains Duplicate II - Easy
-- 220 Contains Duplicate III - Hard
-- 2357 Make Array Zero by Subtracting Equal Amounts - Easy
-- 3438 Find Valid Pair of Adjacent Digits in String - Easy
+- Contains Duplicate II - Easy
+- Contains Duplicate III - Hard
+- Make Array Zero by Subtracting Equal Amounts - Easy
+- Find Valid Pair of Adjacent Digits in String - Easy
