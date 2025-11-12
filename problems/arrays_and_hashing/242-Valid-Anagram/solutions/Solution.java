@@ -1,6 +1,10 @@
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
+/*
+ * In all cases below m = n as we return early on lengeth mismatch
+ */
 class Solution {
 
     /**
@@ -86,6 +90,22 @@ class Solution {
         }
 
         return frequencyMap.entrySet().stream().allMatch(entry -> entry.getValue() == 0);
+    }
+
+    /*
+     * Uses Arrays.sort() with Dual-Pivot QuickSort for char arrays
+     * - Time Complexity: O(n log n) average, O(n^2) worst case (rare)
+     * - Space Complexity: O(log n) for recursion stack
+     */
+     private boolean inAnagramSorting(String s, String t) {
+        if (s.length() != t.length()) return false;
+        
+        char[] sCharArray = s.toCharArray();
+        char[] tCharArray = t.toCharArray();
+        Arrays.sort(sCharArray);
+        Arrays.sort(tCharArray);
+
+        return Arrays.equals(sCharArray, tCharArray);
     }
 
 }
